@@ -12,3 +12,6 @@ from resnext import *
 from preact_resnet import *
 from mobilenet import *
 from mobilenetv2 import *
+from cnn1 import *
+from cnn2 import *
+from cnn3 import *

@@ -138,5 +138,9 @@ def test(epoch):
 
 
 for epoch in range(start_epoch, start_epoch+200):
+    if epoch == 150:
+        optimizer = optim.SGD(net.parameters(), lr=0.01, momentum=0.9, weight_decay=5e-4)
+    if epoch == 250:
+        optimizer = optim.SGD(net.parameters(), lr=0.001.lr, momentum=0.9, weight_decay=5e-4)
     train(epoch)
     test(epoch)
